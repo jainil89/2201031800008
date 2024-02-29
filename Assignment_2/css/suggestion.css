@@ -111,6 +111,10 @@ button:hover{
         width: 40vw;
         padding: 1%;
     }
+    footer{
+        position: relative;
+        top: 80vh;
+    }
     button{
         margin-left: 28vw;
         margin-top: 0vh;
