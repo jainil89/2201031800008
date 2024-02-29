@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/assets/bg1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    ::placeholder{
+        color: whitesmoke;
+        font-size: 20px;
+    }
+}
+
+.box{
+    width: 60vw;
+    height: 60vh;
+    position: relative;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+.p1,.p2{
+    width: 100%;
+    height: 5vh;
+    margin: 5%;
+}
+.p2{
+    margin-top: 10%;
+}
+.p1 input,.p2 input{
+    width: 40%;
+    height: 120%;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.722);
+    color: white;
+}
+.box p{
+    padding: 10px;
+    font-size: 30px;
+    color: whitesmoke;
+}
+.btn{
+    position: absolute;
+    font-size: 30px;
+    left: 80%;
+    top:80%;
+}
+.btn a{
+    text-decoration: none;
+    color: red;
+    font-weight: 900;
+}
+.btn:hover{
+    transform:scale(1.22);
+    transition: 0.5s all ease-in-out;
+}
+@media (max-width:1040px) {
+    .p1 input,.p2 input{
+        width: 60%;
+    }
+    .p2{
+        margin-top: 20%;
+    }
+
+}
+
+@media (max-width:670px) {
+    .p1 input,.p2 input{
+        width: 80%;
+    }
+    .p2{
+        margin-top: 20%;
+    }
+    .box p{
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width:500px) {
+    .p1 input,.p2 input{
+        width: 80%;
+    }
+    .p2{
+        margin-top: 20%;
+    }
+    .box p{
+        font-size: 20px;
+    }
+    .box{
+        width: 80vw;
+    }
+    .btn{
+        left: 45%;
+    }
+
+}
+
+@media (max-width:400px) {
+    .p1 input,.p2 input{
+        width: 80%;
+        height: 100%;
+    }
+    .p2{
+        margin-top: 20%;
+    }
+    .box p{
+        font-size: 20px;
+    }
+    .box{
+        width: 80vw;
+        ::placeholder{
+            font-size: 15px;
+        }
+    }
+    .btn{
+        left: 40%;
+    }
+
+}
